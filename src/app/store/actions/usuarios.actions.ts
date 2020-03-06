@@ -12,7 +12,7 @@ export class CargarUsuarios implements Action {
     readonly type = CARGAR_USUARIOS;
 }
 
-export class CargarUsuarioFail implements Action {
+export class CargarUsuariosFail implements Action {
     readonly type = CARGAR_USUARIOS_FAIL;
 
     constructor(public payload: any) { }
@@ -26,4 +26,4 @@ export class CargarUsuariosSuccess implements Action {
 }
 
 
-export type usuariosAcciones = CargarUsuarios | CargarUsuarioFail | CargarUsuariosSuccess;
+export type usuariosAcciones = CargarUsuarios | CargarUsuariosFail | CargarUsuariosSuccess;
